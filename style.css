@@ -19,11 +19,17 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap; 
-  width: 250px;
-  height: 50px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50%; /* Moves button to the middle vertically */
+  left: 50%; /* Moves button to the middle horizontally */
+  transform: translate(-50%, -50%); /* Centers the button */
+  padding: 10px 20px;
+ 
+width: 250px;
+
+
+
+
 }
 
 #button-62:not([disabled]):focus {
