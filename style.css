@@ -1,0 +1,69 @@
+
+#button-62 {
+  background: linear-gradient(to bottom right, #2b47da, #2a90a4);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap; 
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(72, 96, 224, 0.5), .125rem .125rem 1rem rgba(72, 96, 224, 0.5);
+}
+
+#button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(72, 96, 224, 0.5), .125rem .125rem 1rem rgba(72, 96, 224, 0.5);
+}
+
+@keyframes dance {
+	from, 49% { transform-origin: -50% 100%; }
+	50%, 75%, to { transform-origin: 150% 100%; }
+	25% { transform: rotate(-10deg); }
+	50% { transform: rotate(0deg); }
+	75% { transform: rotate(10deg); }
+}
+
+#poop {
+	position: relative;
+	z-index: -1;
+	display: inline-block;
+	font-size: 500px; 
+   ;/* Chrome disappears emojis larger than this */
+	
+	text-shadow:
+		5px -205px 1px black,
+		-180px -40px 1px brown,
+		-205px 270px 1px black,
+		180px 340px 1px brown,
+		-285px -15px 1px black,
+		50px 200px 1px brown,
+		-145px 110px 1px black;
+}
+#poop:first-child, .poop:last-child {
+	font-size: 200px;
+	position: relative; top: -100px;
+}
+
+#poop:first-child { filter: hue-rotate(-25deg); z-index: 2; }
+#poop:last-child { filter: hue-rotate(25deg); z-index: 0; }
+
+

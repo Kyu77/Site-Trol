@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mange Mon Cul </title>
+  <style>
+    /* Animation de danse */
+    @keyframes dance {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(20deg); }
+      50% { transform: rotate(-20deg); }
+      75% { transform: rotate(20deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .character {
+      font-size: 50px;
+      margin-top: 20px;
+      display: inline-block;
+      animation: dance 1s infinite;
+    }
+  </style>
+</head>
+<body>
+   
+    <button id="button-62" role="button">Abonnez-vous</button>
+  <div id="poop"></div> <!-- Conteneur où les personnages apparaîtront -->
+  <audio id="danceSound" src="Morceau sans titre (2).mp3"></audio>
+
+  <script>
+    document.getElementById('button-62').addEventListener('click', function() {
+      const poop = document.getElementById('poop');
+
+      // Crée un nouvel élément personnage avec la classe d'animation
+      const character = document.createElement('div');
+      character.classList.add('character');
+      character.textContent = '💩'; // Emoji de danse, remplaçable par un autre
+
+      // Ajoute le personnage au conteneur
+      poop.appendChild(character);
+
+      danceSound.currentTime = 0; // Recommence le son depuis le début
+      danceSound.play();
+    });
+  </script>
+</body>
+</html>
